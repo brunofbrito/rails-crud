@@ -1,0 +1,13 @@
+<h1>Create a new post</h1>
+<%= form_for @post, url: {action: "create"}, html: {class: "form-group"} do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title, placeholder: "Your title goes here", class: "form-control"%>
+  <br></div>
+  <div>
+    <%= f.label :body %>
+    <%= f.text_area :body, placeholder: "Your body goes here", class: "form-control" %>
+  </div>
+  <br>
+  <%= f.submit "Add new", class: "btn btn-primary" %>
+<% end %>
