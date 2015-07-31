@@ -1,3 +1,3 @@
 Clearance.configure do |config|
-  config.mailer_sender = ENV['LOGIN']
+  config.mailer_sender = ENV['GMAIL_LOGIN']
 end
